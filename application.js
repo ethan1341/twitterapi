@@ -13,10 +13,6 @@ var passport = require('passport');
 var TwitterStrategy = require('passport-twitter').Strategy;
 
 var client = new Twitter({
-  consumer_key: 'rCuVgw3J4WPcBpeJI5a8JhLio',
-  consumer_secret: 'g7m98geXYPF35EkxnnN1WFHMsDsuhzHH25oGk2pIJPsyiUhhAz',
-  access_token_key: '21965601-AhhUqWNOnKRDsSbOdjaAzhkpp011636voFkMhsEnJ',
-  access_token_secret: 'J9V6jS31MJaoKGMCn2sYR25HQfZ0ICT9LkpiCHaKNbCz4'
 });
 var connect = mongoose.connect('mongodb://localhost/twitteruser', function(err) {})
 var db = mongoose.connection;
