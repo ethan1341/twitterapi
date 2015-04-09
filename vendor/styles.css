@@ -1,0 +1,78 @@
+html {
+  webkit-text-size-adjust: 100%;
+  mozkit-text-size-adjust: 100%; }
+
+body {
+  background-image: url(http://www.sc2ztp.com/bg.png); }
+
+.window-white, #friendslist, #followernavdiv, #contentdisplaydiv {
+  border: 2px solid rgba(10, 150, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.55);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.user-container {
+  border-top: 1px solid rgba(10, 150, 255, 0.4);
+  border-bottom: none;
+  float: left;
+  padding-top: 2%;
+  padding-bottom: 2%; }
+
+.group-height {
+  height: 80%; }
+
+#friendslist {
+  overflow: auto;
+  height: 65%; }
+
+#followernavdiv {
+  height: 34%;
+  margin-bottom: 3%; }
+
+#accountinfodiv {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center; }
+  #accountinfodiv li {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.navbar-collapse.collapse {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center; }
+
+#contentdisplaydiv {
+  overflow: auto;
+  height: 80%; }
+
+.display-retweet {
+  border-top: 1px solid rgba(10, 150, 255, 0.4);
+  border-bottom: none; }
+  .display-retweet p {
+    color: green;
+    font-size: 10px; }
+
+.display-favorite {
+  border-top: 1px solid rgba(10, 150, 255, 0.4);
+  border-bottom: none; }
+  .display-favorite p {
+    color: #d2c100;
+    font-size: 10px; }
+
+.display-tweet {
+  border-top: 1px solid rgba(10, 150, 255, 0.4);
+  border-bottom: none; }
+  .display-tweet p {
+    color: blue;
+    font-size: 10px; }
+
+/*# sourceMappingURL=styles.css.map */

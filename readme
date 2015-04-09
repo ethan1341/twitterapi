@@ -1,0 +1,14 @@
+
+1. Node.JS
+2. Express.JS
+3. Backbone.JS
+4. MongoDB
+5. Passport/OAuth
+6. Mongoose
+7. HTML
+8. CSS
+
+#Purpose 
+The purpose of this project was to combine all the technologies I have learned and use them in a application. The site makes calls to the twitter API in node. Next, the data is sent to the backbone framework where I put the data into collections and models. The models are then posted to Node, certain model attributes will create custom API calls. The custom calls give the user a greater control of the content from the API, not offered by twitter. Additionally model attributes are saved in a database and loaded into the frontend. This allows the frontend view to persist data. To help better understand this project I layout the routes and requests www.sc2ztp.com/map.png .
+
+  This project is made specifically for tweeters with a large amount of followers. Instead of having to ignore or unfollow thousands of people they simply have to click listen. Next, the users will have access to favorites or retweets in their  timeline, this is currently not a feature in Twitter. What excites  me about this project is, I am essentially cloning Twitter. Using copied data and not twitter's data directly, allows me to by pass their  interface.

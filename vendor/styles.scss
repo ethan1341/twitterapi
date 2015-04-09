@@ -1,0 +1,99 @@
+$vartop: top;
+$varbot: bottom;
+$varleft: left;
+$varright: right;
+$varbordercolor: rgba(0,0,0,.2);
+$varmaincolor:#b4b4b4;
+@mixin margin-custom($direction-1, $direction-2, $value-1, $value-2){
+  margin-#{$direction-1}:$value-1;
+  margin-#{$direction-2}:$value-2;
+}
+@mixin border-custom($border-1,$border-2,$value-1,$value-2){
+
+  border-#{$border-1}:$value-1;
+  border-#{$border-2}:$value-2;
+}
+html{
+webkit-text-size-adjust: 100%;
+mozkit-text-size-adjust: 100%;
+}
+body{
+  background-image:url(http://www.sc2ztp.com/bg.png);
+}
+.window-white{
+border:2px solid  rgba(10,150,255,.4);
+background-color:rgba(255,255,255,.55);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+.user-container{
+@include border-custom($vartop,$varbot,1px solid rgba(10,150,255,.4),none);
+float:left;
+padding-top:2%;
+padding-bottom:2%;
+}
+.group-height{
+  height:80%;
+}
+#friendslist{
+@extend .window-white;
+overflow:auto;
+height:65%;
+}
+#followernavdiv{
+height:34%;
+margin-bottom:3%;
+@extend .window-white
+}
+#accountinfodiv{
+position:relative;
+display:flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-content: flex-start;
+align-items: center;
+li{
+  padding-left:10px;
+  padding-right:10px;
+}
+}
+.navbar-collapse.collapse
+{
+  display:flex !important;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-content: flex-start;
+align-items: center;
+}
+#contentdisplaydiv{
+overflow:auto;
+height:80%;
+@extend .window-white
+}
+.display-retweet  {
+p{
+  color:green;
+  font-size:10px;
+  }
+@include border-custom($vartop,$varbot,1px solid rgba(10,150,255,.4),none);
+}
+.display-favorite{
+p{
+color:#d2c100;
+font-size:10px;
+  }
+
+@include border-custom($vartop,$varbot,1px solid rgba(10,150,255,.4),none);
+
+}
+.display-tweet {
+p{
+color:blue;
+font-size:10px;
+}
+
+@include border-custom($vartop,$varbot,1px solid rgba(10,150,255,.4),none);
+}
